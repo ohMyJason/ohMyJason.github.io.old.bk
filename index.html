@@ -54,6 +54,8 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/suibi/">随笔</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -62,8 +64,6 @@
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -108,6 +108,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -128,7 +130,9 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 100%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/suibi/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -144,6 +148,85 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-CentOS7安装RocketMq" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/">CentOS7安装RocketMq</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/" class="archive-article-date">
+  	<time datetime="2019-10-24T18:45:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="项目中需要做到私信的消息推送功能，特记录安装过程"><a href="#项目中需要做到私信的消息推送功能，特记录安装过程" class="headerlink" title="项目中需要做到私信的消息推送功能，特记录安装过程"></a>项目中需要做到私信的消息推送功能，特记录安装过程</h1><h2 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h2><h3 id="安装maven"><a href="#安装maven" class="headerlink" title="安装maven"></a>安装maven</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo yum install -y apache-maven</span><br></pre></td></tr></table></figure>
+<h3 id="配置镜像"><a href="#配置镜像" class="headerlink" title="配置镜像"></a>配置镜像</h3>
+        
+          <a class="article-more-a" href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">server</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
   
     <article id="post-从零开始配置Springboot-Mybatis-MybatisGenerator" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -870,88 +953,6 @@
 
 
   
-    <article id="post-管理信息系统笔记-ERP的实施与使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/29/%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-ERP%E7%9A%84%E5%AE%9E%E6%96%BD%E4%B8%8E%E4%BD%BF%E7%94%A8/">管理信息系统笔记-ERP的实施与使用</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/29/%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-ERP%E7%9A%84%E5%AE%9E%E6%96%BD%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2019-04-28T19:17:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="管理信息系统笔记-ERP的实施与使用"><a href="#管理信息系统笔记-ERP的实施与使用" class="headerlink" title="管理信息系统笔记-ERP的实施与使用"></a>管理信息系统笔记-ERP的实施与使用</h1><p>标签（空格分隔）： 管理信息系统</p>
-<hr>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><blockquote>
-<p>维基百科：企业资源计划即 ERP (Enterprise Resource Planning)，由美国 Gartner Group 公司于1990年提出。企业资源计划是 MRP II（企业制造资源计划）下一代的制造业系统和资源计划软件。除了MRP II 已有的生产资源计划、制造、财务、销售、采购等功能外，还有质量管理，实验室管理，业务流程管理，产品数据管理，存货、分销与运输管理，人力资源管理和定期报告系统。目前，在我国 ERP 所代表的含义已经被扩大，用于企业的各类软件，已经统统被纳入 ERP 的范畴。它跳出了传统企业边界，从供应链范围去优化企业的资源，是基于网络经济时代的新一代信息系统。它主要用于改善企业业务流程以提高企业核心竞争力。</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2019/04/29/%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-ERP%E7%9A%84%E5%AE%9E%E6%96%BD%E4%B8%8E%E4%BD%BF%E7%94%A8/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">管理信息系统</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/29/%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0-ERP%E7%9A%84%E5%AE%9E%E6%96%BD%E4%B8%8E%E4%BD%BF%E7%94%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1028,8 +1029,6 @@ MathJax.Hub.Queue(function() {
       
     
       
-      
-      
     
       
       
@@ -1041,15 +1040,13 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -1082,11 +1079,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机视觉</a>
+                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机视觉</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1149,183 +1146,11 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="/%3C" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>0</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%20" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/h" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/e" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/r" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/f" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>6</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/=" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>7</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%22" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>8</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>9</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>10</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>11</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>12</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/b" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>13</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>14</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/i" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>15</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/d" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>16</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/u" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>17</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>18</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/c" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>19</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/o" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>20</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/m" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>21</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%22" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>22</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%3E" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>23</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>24</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>25</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>26</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>27</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/b" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>28</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>29</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/i" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>30</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/d" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>31</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/u" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>32</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>33</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/c" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>34</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/o" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>35</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/m" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>36</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%3C" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>37</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>38</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>39</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%3E" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>40</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">学生&lt;br&gt;就读集大&lt;br&gt;对博客内容有疑问欢迎交流&lt;br&gt;E-mail:719134834@qq.com</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">学生&lt;br&gt;就读集大&lt;br&gt;对博客内容有疑问欢迎交流&lt;br&gt;e-mail:ohmyjason@foxmail.com</div>
   	  	
     	</section>
     

@@ -54,6 +54,8 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/suibi/">随笔</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -62,8 +64,6 @@
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
     			
             
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -108,6 +108,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -128,7 +130,9 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 100%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/suibi/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -144,6 +148,105 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-基于SIFT的全景图像拼接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/01/%E5%9F%BA%E4%BA%8ESIFT%E7%9A%84%E5%85%A8%E6%99%AF%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/">基于SIFT的全景图像拼接</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/01/%E5%9F%BA%E4%BA%8ESIFT%E7%9A%84%E5%85%A8%E6%99%AF%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/" class="archive-article-date">
+  	<time datetime="2019-03-31T19:51:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>图像拼接技术作为一大研究热点,主要用于计算机视觉和数字图像处理领域.图像拼接技术即是将同一场景下的两个或多个重叠图像通过一系列数字图像技术处理,并且可以获得包含所有原始图像信息的新的全景图像.近年来,该技术被广泛应用于航天,医学,虚拟现实和日常生活等许多领域.图像配准即是找到两个或更多个图像的重叠部分, 并建立图像之间的关系.图像配准算法可以大致分为两种类型, 一种是基于图<br>像特征的图像配准, 另一种是基于区域的图像配准.<br>本文着重介绍，基于sift特征值匹配的全景图像拼接算法，实现分别输入5张不同的<strong>集美大学</strong>校园图片，通过sift算法进行特征值的提取匹配，再通过</p>
+</blockquote>
+<h2 id="sift特征点的提取"><a href="#sift特征点的提取" class="headerlink" title="sift特征点的提取"></a>sift特征点的提取</h2><blockquote>
+<p>1999年, David G. Lowe教授总结了现有的基于不变技术的特征检测方法, 并在此基础上提出尺度不变特征变换SIFT-图像局部特征描述算子. SIFT基于尺度<br>空间, 并且保持对图像变换的不变性, 例如缩放, 旋转和仿射变换. 并于2004年得到进一步改进.</p>
+</blockquote>
+<p><img src="https://img-blog.csdn.net/20160918205938524" alt=""></p>
+<p>SIFT特征提取和匹配的过程主要包括四个部分:</p>
+<ul>
+<li>SIFT特征检测</li>
+</ul>
+<ol>
+<li>生成高斯差分金字塔（DOG金字塔），尺度空间构建</li>
+<li>空间极值点检测（关键点的初步查探）</li>
+<li>稳定关键点的精确定位</li>
+<li>稳定关键点方向信息分配</li>
+</ol>
+<ul>
+<li>SIFT特征描述</li>
+<li>SIFT特征匹配</li>
+<li>匹配点提纯</li>
+</ul>
+        
+          <a class="article-more-a" href="/2019/04/01/%E5%9F%BA%E4%BA%8ESIFT%E7%9A%84%E5%85%A8%E6%99%AF%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机视觉</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/01/%E5%9F%BA%E4%BA%8ESIFT%E7%9A%84%E5%85%A8%E6%99%AF%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
   
     <article id="post-管理信息系统笔记-数据挖掘" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -786,84 +889,6 @@
 
 
   
-    <article id="post-信息分析与预测学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/03/%E4%BF%A1%E6%81%AF%E5%88%86%E6%9E%90%E4%B8%8E%E9%A2%84%E6%B5%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">信息分析与预测学习笔记-信息系统概述</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/03/%E4%BF%A1%E6%81%AF%E5%88%86%E6%9E%90%E4%B8%8E%E9%A2%84%E6%B5%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-03-03T11:32:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="进行课题选择的时候，需要注意哪些问题？"><a href="#进行课题选择的时候，需要注意哪些问题？" class="headerlink" title="进行课题选择的时候，需要注意哪些问题？"></a>进行课题选择的时候，需要注意哪些问题？</h2><h3 id="首先要将针对性与预见性紧密结合"><a href="#首先要将针对性与预见性紧密结合" class="headerlink" title="首先要将针对性与预见性紧密结合"></a>首先要将针对性与预见性紧密结合</h3><p>针对性是指题目十五明确，所选题目具有一定的现实意义。这就要求信息分析与预测人员对国家再政治，经济，科技等方面的方针，政策有较为深刻的体会，要针对用户的客观需要和近期要求。只有这样选出的课题才能切合实际，有的放矢，易于取得较好的经济效益和社会效益。但是，只注重针对性还不够，必须同时注重选题的预见性。信息分析与预测人员应当有远见卓识，对各种事物要极为敏感，既要即使发现国内外的最新动态，又要善于预测未来的发展趋势。有人曾经这样描述说，信息分析与预测人员对于研究课题，应该像家中宴请客人时贪吃的孩子那样，嘴里吃着，筷子上夹着，眼睛里还得盯着</p>
-        
-          <a class="article-more-a" href="/2019/03/03/%E4%BF%A1%E6%81%AF%E5%88%86%E6%9E%90%E4%B8%8E%E9%A2%84%E6%B5%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">信息分析与预测</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/03/%E4%BF%A1%E6%81%AF%E5%88%86%E6%9E%90%E4%B8%8E%E9%A2%84%E6%B5%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
     <article id="post-信息分析与预测2019.3.3学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1018,8 +1043,6 @@ MathJax.Hub.Queue(function() {
       
     
       
-      
-      
     
       
       
@@ -1031,15 +1054,13 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -1072,11 +1093,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机视觉</a>
+                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机视觉</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1139,183 +1160,11 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="/%3C" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>0</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%20" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/h" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/e" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/r" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/f" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>6</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/=" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>7</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%22" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>8</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>9</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>10</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>11</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>12</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/b" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>13</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>14</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/i" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>15</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/d" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>16</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/u" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>17</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>18</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/c" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>19</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/o" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>20</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/m" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>21</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%22" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>22</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%3E" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>23</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>24</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>25</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/w" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>26</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>27</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/b" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>28</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>29</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/i" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>30</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/d" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>31</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/u" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>32</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/." target="_blank" class="search-title"><i class="icon-quo-left icon"></i>33</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/c" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>34</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/o" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>35</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/m" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>36</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%3C" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>37</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>38</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/a" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>39</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/%3E" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>40</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">学生&lt;br&gt;就读集大&lt;br&gt;对博客内容有疑问欢迎交流&lt;br&gt;E-mail:719134834@qq.com</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">学生&lt;br&gt;就读集大&lt;br&gt;对博客内容有疑问欢迎交流&lt;br&gt;e-mail:ohmyjason@foxmail.com</div>
   	  	
     	</section>
     

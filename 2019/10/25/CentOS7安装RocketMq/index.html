@@ -6,14 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | 刘佳昇的秘密基地</title>
+  <title>CentOS7安装RocketMq | 刘佳昇的秘密基地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="刘佳昇的秘密基地">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="项目中需要做到私信的消息推送功能，特记录安装过程maven安装maven123sudo wget http:&#x2F;&#x2F;repos.fedorapeople.org&#x2F;repos&#x2F;dchen&#x2F;apache-maven&#x2F;epel-apache-maven.repo -O &#x2F;etc&#x2F;yum.repos.d&#x2F;epel-apache-maven.reposudo sed -i s&#x2F;\$releasever&#x2F;6&#x2F;g">
+<meta name="keywords" content="server">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS7安装RocketMq">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;25&#x2F;CentOS7%E5%AE%89%E8%A3%85RocketMq&#x2F;index.html">
 <meta property="og:site_name" content="刘佳昇的秘密基地">
+<meta property="og:description" content="项目中需要做到私信的消息推送功能，特记录安装过程maven安装maven123sudo wget http:&#x2F;&#x2F;repos.fedorapeople.org&#x2F;repos&#x2F;dchen&#x2F;apache-maven&#x2F;epel-apache-maven.repo -O &#x2F;etc&#x2F;yum.repos.d&#x2F;epel-apache-maven.reposudo sed -i s&#x2F;\$releasever&#x2F;6&#x2F;g">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;7fbaa69egy1g748j5qjgrj20lt0gi404.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;7fbaa69egy1g748oj659fj20og0cot9v.jpg">
+<meta property="og:updated_time" content="2019-10-24T18:47:26.791Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;7fbaa69egy1g748j5qjgrj20lt0gi404.jpg">
   
     <link rel="alternative" href="/atom.xml" title="刘佳昇的秘密基地" type="application/atom+xml">
   
@@ -147,36 +154,90 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-CentOS7安装RocketMq" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      CentOS7安装RocketMq
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/" class="archive-article-date">
+
+        
+        <a href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/" class="archive-article-date">
   	<time datetime="2019-10-24T18:45:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/">CentOS7安装RocketMq</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="项目中需要做到私信的消息推送功能，特记录安装过程"><a href="#项目中需要做到私信的消息推送功能，特记录安装过程" class="headerlink" title="项目中需要做到私信的消息推送功能，特记录安装过程"></a>项目中需要做到私信的消息推送功能，特记录安装过程</h1><h2 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h2><h3 id="安装maven"><a href="#安装maven" class="headerlink" title="安装maven"></a>安装maven</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo yum install -y apache-maven</span><br></pre></td></tr></table></figure>
+<h3 id="配置镜像"><a href="#配置镜像" class="headerlink" title="配置镜像"></a>配置镜像</h3><a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/share/apache-maven/conf/settings.xml</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>添加阿里镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置仓库位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;/cicro/var/m2/repo&lt;/localRepository&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="安装RocketMq"><a href="#安装RocketMq" class="headerlink" title="安装RocketMq"></a>安装RocketMq</h2><p>前往官方文档<br><a href="https://rocketmq.apache.org/docs/quick-start/" target="_blank" rel="noopener">传送门</a></p>
+<blockquote>
+<p>不得不吐槽一下，为什么不来一个中文的。不是阿里的项目吗</p>
+</blockquote>
+<p>官方问档中找到官方下载地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://www-us.apache.org/dist/rocketmq/4.4.0/rocketmq-all-4.4.0-source-release.zip</span><br></pre></td></tr></table></figure>
+<p>根据官方文档教程一步一步来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unzip rocketmq-all-4.4.0-source-release.zip</span><br><span class="line">cd rocketmq-all-4.4.0/</span><br><span class="line">mvn -Prelease-all -DskipTests clean install -U</span><br></pre></td></tr></table></figure>
+<p>接下来等待依赖包安装完成。因为是maven管理的项目，所以需要使用mvn下载依赖包。</p>
+<p>等了5分钟，显示build报错<br><img src="http://ww1.sinaimg.cn/large/7fbaa69egy1g748j5qjgrj20lt0gi404.jpg" alt="image.png"></p>
+<p>可以看到上面都很正常，在build rocketmq-acl的时候显示失败，后面就直接skip了</p>
+<p>接着查看报错信息他说在测试这个acl组件的时候测试失败，所以认为失败。接着给了一些文档说明。</p>
+<p>然后下面给了个贴心小tip<br><img src="http://ww1.sinaimg.cn/large/7fbaa69egy1g748oj659fj20og0cot9v.jpg" alt="image.png"></p>
+<p>意思让你从这个acl重来一遍，按照提示操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn initialize -rf :rocketmq-acl</span><br></pre></td></tr></table></figure>
+<p> 然后就ok啦~</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weipay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -188,365 +249,143 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/25/CentOS7%E5%AE%89%E8%A3%85RocketMq/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/06/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AESpringboot-Mybatis-MybatisGenerator/" class="archive-article-date">
-  	<time datetime="2019-08-05T17:53:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/06/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AESpringboot-Mybatis-MybatisGenerator/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">从零开始配置Springboot+Mybatis+MybatisGenerator</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/06/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AESpringboot-Mybatis-MybatisGenerator/">从零开始配置Springboot+Mybatis+MybatisGenerator</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目中需要做到私信的消息推送功能，特记录安装过程"><span class="toc-number">1.</span> <span class="toc-text">项目中需要做到私信的消息推送功能，特记录安装过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#maven"><span class="toc-number">1.1.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装maven"><span class="toc-number">1.1.1.</span> <span class="toc-text">安装maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置镜像"><span class="toc-number">1.1.2.</span> <span class="toc-text">配置镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装RocketMq"><span class="toc-number">1.2.</span> <span class="toc-text">安装RocketMq</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
+
+  <!-- 这一块是vline代码 -->
   
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: 'YTRudWHzlIAd2C11Bthb1jFc-gzGzoHsz',
+    appKey: '8nexmwrzO2owoxYiODxji2h7',
+    placeholder: 'ヾﾉ≧∀≦)o欢迎评论!',
+    path:window.location.pathname, 
+    avatar:'mm' 
+});
+</script>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/06/org-thymeleaf-exceptions-TemplateInputException%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/" class="archive-article-date">
-  	<time datetime="2019-08-05T17:49:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/06/org-thymeleaf-exceptions-TemplateInputException%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/">org.thymeleaf.exceptions.TemplateInputException报错解决</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/06/Spring-boot%E6%8A%A5%E9%94%99-java-sql-SQLException-Access-denied/" class="archive-article-date">
-  	<time datetime="2019-08-05T17:46:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/06/Spring-boot%E6%8A%A5%E9%94%99-java-sql-SQLException-Access-denied/">Spring boot报错 java.sql.SQLException_ Access denied for user &#39;&#39;@&#39;140.243.91.25&#39; (using password_ NO)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/05/LeetCode%E6%97%A5%E8%AE%B0-%E5%8A%A0%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2019-06-05T09:20:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/05/LeetCode%E6%97%A5%E8%AE%B0-%E5%8A%A0%E4%B8%80/">LeetCode日记-加一</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/01/CentOS7%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AEmysql/" class="archive-article-date">
-  	<time datetime="2019-05-31T16:45:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/01/CentOS7%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AEmysql/">CentOS7服务器配置mysql</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">server</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/01/CentOS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AENginx/" class="archive-article-date">
-  	<time datetime="2019-05-31T16:42:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/01/CentOS%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AENginx/">CentOS服务器配置Nginx</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">server</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/07/LeetCode%E6%97%A5%E8%AE%B0-day2-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2019-05-07T15:20:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/07/LeetCode%E6%97%A5%E8%AE%B0-day2-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC%E9%97%AE%E9%A2%98/">LeetCode日记-day2 整数反转问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/01/LeetCode%E6%97%A5%E8%AE%B0-day1-%E6%95%B0%E7%BB%84%E4%B8%AD%E6%89%BE%E5%A6%88%E5%A6%88%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2019-04-30T18:09:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/01/LeetCode%E6%97%A5%E8%AE%B0-day1-%E6%95%B0%E7%BB%84%E4%B8%AD%E6%89%BE%E5%A6%88%E5%A6%88%E9%97%AE%E9%A2%98/">LeetCode日记-day1 数组中找妈妈问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/30/%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%A7%A3%E5%86%B3pip%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E4%B8%80%E6%AC%A1%E6%80%A7%E5%AE%89%E8%A3%85pip%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E9%95%9C%E5%83%8F/" class="archive-article-date">
-  	<time datetime="2019-04-30T14:16:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/30/%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%A7%A3%E5%86%B3pip%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E4%B8%80%E6%AC%A1%E6%80%A7%E5%AE%89%E8%A3%85pip%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E9%95%9C%E5%83%8F/">从根源解决pip慢的问题——一次性安装pip清华大学镜像</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
     
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2019/page/2/">2</a><a class="page-number" href="/archives/2019/page/3/">3</a><a class="page-number" href="/archives/2019/page/4/">4</a><a class="extend next" rel="next" href="/archives/2019/page/2/">Next &amp;raquo;</a>
-    </nav>
+
   
+  
+  
+
+  
+
+  
+
+  
+
+
 
 
           </div>
@@ -569,8 +408,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
