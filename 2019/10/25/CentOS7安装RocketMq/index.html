@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>CentOS7安装RocketMq | 刘佳昇的秘密基地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="项目中需要做到私信的消息推送功能，特记录安装过程maven安装maven123sudo wget http:&#x2F;&#x2F;repos.fedorapeople.org&#x2F;repos&#x2F;dchen&#x2F;apache-maven&#x2F;epel-apache-maven.repo -O &#x2F;etc&#x2F;yum.repos.d&#x2F;epel-apache-maven.reposudo sed -i s&#x2F;\$releasever&#x2F;6&#x2F;g">
+  <meta name="description" content="记录学习RocketMq时的安装过程     maven安装maven123sudo wget http:&#x2F;&#x2F;repos.fedorapeople.org&#x2F;repos&#x2F;dchen&#x2F;apache-maven&#x2F;epel-apache-maven.repo -O &#x2F;etc&#x2F;yum.repos.d&#x2F;epel-apache-maven.reposudo sed -i s&#x2F;\$releasever&#x2F;6&#x2F;g &#x2F;">
 <meta name="keywords" content="server">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS7安装RocketMq">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;25&#x2F;CentOS7%E5%AE%89%E8%A3%85RocketMq&#x2F;index.html">
 <meta property="og:site_name" content="刘佳昇的秘密基地">
-<meta property="og:description" content="项目中需要做到私信的消息推送功能，特记录安装过程maven安装maven123sudo wget http:&#x2F;&#x2F;repos.fedorapeople.org&#x2F;repos&#x2F;dchen&#x2F;apache-maven&#x2F;epel-apache-maven.repo -O &#x2F;etc&#x2F;yum.repos.d&#x2F;epel-apache-maven.reposudo sed -i s&#x2F;\$releasever&#x2F;6&#x2F;g">
+<meta property="og:description" content="记录学习RocketMq时的安装过程     maven安装maven123sudo wget http:&#x2F;&#x2F;repos.fedorapeople.org&#x2F;repos&#x2F;dchen&#x2F;apache-maven&#x2F;epel-apache-maven.repo -O &#x2F;etc&#x2F;yum.repos.d&#x2F;epel-apache-maven.reposudo sed -i s&#x2F;\$releasever&#x2F;6&#x2F;g &#x2F;">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;7fbaa69egy1g748j5qjgrj20lt0gi404.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;7fbaa69egy1g748oj659fj20og0cot9v.jpg">
-<meta property="og:updated_time" content="2019-10-24T18:47:26.791Z">
+<meta property="og:updated_time" content="2019-10-24T18:52:44.105Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;ww1.sinaimg.cn&#x2F;large&#x2F;7fbaa69egy1g748j5qjgrj20lt0gi404.jpg">
   
@@ -174,7 +174,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="项目中需要做到私信的消息推送功能，特记录安装过程"><a href="#项目中需要做到私信的消息推送功能，特记录安装过程" class="headerlink" title="项目中需要做到私信的消息推送功能，特记录安装过程"></a>项目中需要做到私信的消息推送功能，特记录安装过程</h1><h2 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h2><h3 id="安装maven"><a href="#安装maven" class="headerlink" title="安装maven"></a>安装maven</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo yum install -y apache-maven</span><br></pre></td></tr></table></figure>
+        <p>记录学习RocketMq时的安装过程    </p>
+<h2 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h2><h3 id="安装maven"><a href="#安装maven" class="headerlink" title="安装maven"></a>安装maven</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo</span><br><span class="line">sudo yum install -y apache-maven</span><br></pre></td></tr></table></figure>
 <h3 id="配置镜像"><a href="#配置镜像" class="headerlink" title="配置镜像"></a>配置镜像</h3><a id="more"></a>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/share/apache-maven/conf/settings.xml</span><br></pre></td></tr></table></figure>
@@ -342,7 +343,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#项目中需要做到私信的消息推送功能，特记录安装过程"><span class="toc-number">1.</span> <span class="toc-text">项目中需要做到私信的消息推送功能，特记录安装过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#maven"><span class="toc-number">1.1.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装maven"><span class="toc-number">1.1.1.</span> <span class="toc-text">安装maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置镜像"><span class="toc-number">1.1.2.</span> <span class="toc-text">配置镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装RocketMq"><span class="toc-number">1.2.</span> <span class="toc-text">安装RocketMq</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#maven"><span class="toc-number">1.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装maven"><span class="toc-number">1.1.</span> <span class="toc-text">安装maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置镜像"><span class="toc-number">1.2.</span> <span class="toc-text">配置镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装RocketMq"><span class="toc-number">2.</span> <span class="toc-text">安装RocketMq</span></a></li></ol>
                     </div>
                 </span>
             </div>
