@@ -149,6 +149,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-从根源解决pip慢的问题——一次性安装pip清华大学镜像" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/30/%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%A7%A3%E5%86%B3pip%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E4%B8%80%E6%AC%A1%E6%80%A7%E5%AE%89%E8%A3%85pip%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E9%95%9C%E5%83%8F/">从根源解决pip慢的问题——一次性安装pip清华大学镜像</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/30/%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%A7%A3%E5%86%B3pip%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E4%B8%80%E6%AC%A1%E6%80%A7%E5%AE%89%E8%A3%85pip%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E9%95%9C%E5%83%8F/" class="archive-article-date">
+  	<time datetime="2019-04-30T14:16:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>每次需要通过pip安装某些包的时候，由于源在镜外，导致速度非常慢。这时候通常选择使用镜像。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package</span><br></pre></td></tr></table></figure>
+<p>但是url太长了，每次使用都敲这么多不现实。所以可以通过配置pip的方式一次配置，终身使用。</p>
+<ul>
+<li>请确保pip的版本&gt;=10</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pip -U</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<p>成功，接下来下载任何包都只要</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install some-package</span><br></pre></td></tr></table></figure>
+<p>就可以啦</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/30/%E4%BB%8E%E6%A0%B9%E6%BA%90%E8%A7%A3%E5%86%B3pip%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94%E4%B8%80%E6%AC%A1%E6%80%A7%E5%AE%89%E8%A3%85pip%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E9%95%9C%E5%83%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
     <article id="post-管理信息系统笔记-ERP的实施与使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -887,86 +974,6 @@
 
 
   
-    <article id="post-ISIS协议知识梳理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/04/ISIS%E5%8D%8F%E8%AE%AE%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/">ISIS协议知识梳理</a>
-    </h1>
-  
-
-        
-        <a href="/2019/04/04/ISIS%E5%8D%8F%E8%AE%AE%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/" class="archive-article-date">
-  	<time datetime="2019-04-04T13:19:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>ISIS-中间系统到中间系统路由协议</strong></p>
-<p>#基础</p>
-<h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><p><img src="http://ww1.sinaimg.cn/large/7fbaa69ely1g1ajgg7ddvj21iw0mck0l.jpg" alt=""></p>
-        
-          <a class="article-more-a" href="/2019/04/04/ISIS%E5%8D%8F%E8%AE%AE%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机网络</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/04/ISIS%E5%8D%8F%E8%AE%AE%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
@@ -1093,11 +1100,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机视觉</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机视觉</a>
+                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1106,6 +1113,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">管理信息系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">安全</a>
               </li>
              
               <li class="article-tag-list-item">
